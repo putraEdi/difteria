@@ -10,8 +10,6 @@ class FormLoginScreen extends StatefulWidget {
 class FormLoginScreenState extends State<FormLoginScreen> {
   String _email;
   String _password;
-  String _name;
-  String _lembaga;
 
   final GlobalKey<FormState> _formKey = GlobalKey<FormState>();
 
@@ -86,8 +84,6 @@ class FormLoginScreenState extends State<FormLoginScreen> {
                         _formKey.currentState.save();
                         print(_email);
                         print(_password);
-                        print(_name);
-                        print(_lembaga);
 
                         //Send to API
                       },
